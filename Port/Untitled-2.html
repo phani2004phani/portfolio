@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+            margin: 0;
+            background-color: #f4f4f4; /* Optional: Adds a light background color */
+        }
+
+        .container {
+            text-align: center; /* Center the form container */
+        }
+
+        form {
+            text-align: left;
+            width: 350px; /* Increased width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        h2 {
+            font-size: 2em; /* Increase the font size for the title */
+            margin-bottom: 20px; /* Add space below the title */
+        }
+
+        label {
+            font-size: 1.2em; /* Increase label text size */
+        }
+
+        input, textarea, button {
+            width: 100%; /* Make all inputs, textarea, and button the same width */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            font-size: 1.1em; /* Increase font size for input fields */
+            padding: 10px; /* Add padding inside the input fields */
+            margin-bottom: 15px; /* Increase space between input fields */
+        }
+
+        textarea {
+            height: 150px; /* Increase the height of the textarea */
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+        button {
+            font-size: 1.2em; /* Increase button text size */
+            padding: 12px; /* Add padding inside the button */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="mailto:phanichowdary226@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
